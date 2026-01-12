@@ -1,0 +1,105 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#inputBox {
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  background-color: #f7f8f8;
+}
+
+#inputBox:hover {
+  background-color: #5a5c5f;
+}
+
+input::placeholder{
+    color: rgb(226, 6, 17);
+}
+#scientific {
+  display: none;
+  margin-top: 10px;
+}
+
+#scientific.show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+#toggleSci {
+  background-color: rgba(0, 0, 0, 0.433);
+  color: white;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#toggleSci:hover {
+  background-color: #555;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(255, 132, 0);
+    background-color: aliceblue;
+}
+
+.equalBtn{
+    background-color: #fb7c14;
+}
+.equalBtn:hover{
+    background-color: #0a83df;
+    color: #ffffff;
+}
+
+.operator{
+    color: #0aee15;
+}
